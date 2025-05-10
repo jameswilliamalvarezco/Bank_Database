@@ -1,5 +1,5 @@
 /*________________________________________________________________________________ Database ______________________________________________________________________________________________________________________*/
-
+-- This is a test
 USE master; -- Makes sure that there's no other database selected and so that we can execute the code and create a new database. 
 
 IF EXISTS(SELECT * FROM sys.databases WHERE name = 'Bank') -- Drops the database if it exists.
@@ -203,20 +203,20 @@ INSERT INTO Users.Customers
     (Name, SocialSecurityNumber, DateOfBirth, Gender, Email, PhoneNumber, Address, PostalCode, City, Country, Status)
 VALUES
     ('Johan Svensson', '19880415-7845', '1988-04-15', 'M', 'johan.svensson@gmail.com', '+46738911234', 'Storgatan 12', '114 56', 'Stockholm', 'Sweden', 'Active'),
-    ('Fatima Hussein', '19950610-4521', '1995-06-10', 'F', 'fatima.hussein@yahoo.com', '+46763224567', 'Bergsgatan 23', '211 12', 'Malmö', 'Iraq', 'Active'),
-    ('Anders Karlsson', '20010821-9856', '2001-08-21', 'M', 'anders.karlsson@hotmail.com', '+46782347654', 'Linnégatan 45', '413 04', 'Göteborg', 'Sweden', 'Inactive'),
+    ('Fatima Hussein', '19950610-4521', '1995-06-10', 'F', 'fatima.hussein@yahoo.com', '+46763224567', 'Bergsgatan 23', '211 12', 'Malmï¿½', 'Iraq', 'Active'),
+    ('Anders Karlsson', '20010821-9856', '2001-08-21', 'M', 'anders.karlsson@hotmail.com', '+46782347654', 'Linnï¿½gatan 45', '413 04', 'Gï¿½teborg', 'Sweden', 'Inactive'),
     ('Sofia Zhang', '20050411-5673', '2005-04-11', 'F', 'sofia.zhang@gmail.com', '+46765438912', 'Kungsgatan 8', '753 20', 'Uppsala', 'China', 'Active'),
-    ('Oskar Berg', '19991202-3456', '1999-12-02', 'M', 'oskar.berg@gmail.com', '+46734598761', 'Drottninggatan 30', '803 10', 'Gävle', 'Sweden', 'Blocked'),
-    ('Lena Persson', '19830527-1234', '1983-05-27', 'F', 'lena.persson@gmail.com', '+46768765432', 'Huvudvägen 5', '541 45', 'Skövde', 'Sweden', 'Active'),
-    ('Ahmed Ali', '20020814-9872', '2002-08-14', 'M', 'ahmed.ali@gmail.com', '+46769876543', 'Rosengårdsvägen 6', '213 66', 'Malmö', 'Somalia', 'Inactive'),
-    ('Emma Lindström', '19970303-7654', '1997-03-03', 'F', 'emma.lindstrom@gmail.com', '+46765412389', 'Torsgatan 18', '411 03', 'Göteborg', 'Sweden', 'Blocked'),
-    ('David Brown', '19900129-4321', '1990-01-29', 'M', 'david.brown@gmail.com', '+46768901234', 'Sveavägen 60', '113 59', 'Stockholm', 'USA', 'Active'),
-    ('Aliyah Mohamed', '20070930-6543', '2007-09-30', 'F', 'aliyah.mohamed@gmail.com', '+46769871234', 'Lantmannagatan 9', '214 50', 'Malmö', 'Eritrea', 'Inactive'),
-    ('Elliot Larsson', '20100205-8765', '2010-02-05', 'O', 'elliot.larsson@gmail.com', '+46769876521', 'Vasagatan 3', '722 11', 'Västerås', 'Sweden', 'Active'),
-    ('Isabella Rossi', '19920418-4323', '1992-04-18', 'F', 'isabella.rossi@gmail.com', '+46768904321', 'Östra Hamngatan 4', '411 10', 'Göteborg', 'Italy', 'Blocked'),
+    ('Oskar Berg', '19991202-3456', '1999-12-02', 'M', 'oskar.berg@gmail.com', '+46734598761', 'Drottninggatan 30', '803 10', 'Gï¿½vle', 'Sweden', 'Blocked'),
+    ('Lena Persson', '19830527-1234', '1983-05-27', 'F', 'lena.persson@gmail.com', '+46768765432', 'Huvudvï¿½gen 5', '541 45', 'Skï¿½vde', 'Sweden', 'Active'),
+    ('Ahmed Ali', '20020814-9872', '2002-08-14', 'M', 'ahmed.ali@gmail.com', '+46769876543', 'Rosengï¿½rdsvï¿½gen 6', '213 66', 'Malmï¿½', 'Somalia', 'Inactive'),
+    ('Emma Lindstrï¿½m', '19970303-7654', '1997-03-03', 'F', 'emma.lindstrom@gmail.com', '+46765412389', 'Torsgatan 18', '411 03', 'Gï¿½teborg', 'Sweden', 'Blocked'),
+    ('David Brown', '19900129-4321', '1990-01-29', 'M', 'david.brown@gmail.com', '+46768901234', 'Sveavï¿½gen 60', '113 59', 'Stockholm', 'USA', 'Active'),
+    ('Aliyah Mohamed', '20070930-6543', '2007-09-30', 'F', 'aliyah.mohamed@gmail.com', '+46769871234', 'Lantmannagatan 9', '214 50', 'Malmï¿½', 'Eritrea', 'Inactive'),
+    ('Elliot Larsson', '20100205-8765', '2010-02-05', 'O', 'elliot.larsson@gmail.com', '+46769876521', 'Vasagatan 3', '722 11', 'Vï¿½sterï¿½s', 'Sweden', 'Active'),
+    ('Isabella Rossi', '19920418-4323', '1992-04-18', 'F', 'isabella.rossi@gmail.com', '+46768904321', 'ï¿½stra Hamngatan 4', '411 10', 'Gï¿½teborg', 'Italy', 'Blocked'),
     ('Kristian Nilsson', '20060317-5432', '2006-03-17', 'M', 'kristian.nilsson@gmail.com', '+46765498721', 'Brunnsgatan 19', '111 38', 'Stockholm', 'Sweden', 'Inactive'),
-    ('Morgan Sjöberg', '19891224-3214', '1989-12-24', 'O', 'morgan.sjoberg@gmail.com', '+46769871239', 'Björkvägen 7', '632 20', 'Eskilstuna', 'Sweden', 'Active'),
-    ('Amina Jafari', '20080812-6547', '2008-08-12', 'F', 'amina.jafari@gmail.com', '+46767890123', 'Kungsängsgatan 12', '753 20', 'Uppsala', 'Afghanistan', 'Blocked');
+    ('Morgan Sjï¿½berg', '19891224-3214', '1989-12-24', 'O', 'morgan.sjoberg@gmail.com', '+46769871239', 'Bjï¿½rkvï¿½gen 7', '632 20', 'Eskilstuna', 'Sweden', 'Active'),
+    ('Amina Jafari', '20080812-6547', '2008-08-12', 'F', 'amina.jafari@gmail.com', '+46767890123', 'Kungsï¿½ngsgatan 12', '753 20', 'Uppsala', 'Afghanistan', 'Blocked');
 
 INSERT INTO Users.Alerts
 	(CustomerID, AlertType, AlertMessage, Status)
@@ -236,30 +236,30 @@ INSERT INTO Bank.Branches
 	(BranchName, BranchAddress, BranchPhoneNumber)
 VALUES
 	('Stockholm City Bank', 'Drottninggatan 15, 111 51 Stockholm', '+46 8 555 12345'),
-	('Göteborg Finanscenter', 'Avenyn 32, 411 36 Göteborg', '+46 31 789 6789'),
-	('Malmö Bank & Co.', 'Stortorget 7, 211 34 Malmö', '+46 40 222 4567');
+	('Gï¿½teborg Finanscenter', 'Avenyn 32, 411 36 Gï¿½teborg', '+46 31 789 6789'),
+	('Malmï¿½ Bank & Co.', 'Stortorget 7, 211 34 Malmï¿½', '+46 40 222 4567');
 
 INSERT INTO Users.Employees
 	(BranchID, Name, Position, Gender, Email, PhoneNumber, Address, PostalCode, City, Country, EmploymentDate, Salary)
 VALUES
-	(1, 'Erik Johansson', 'Branch Manager', 'M', 'erik.johansson@stockholmbank.se', '+46 70 123 4567', 'Sveavägen 14', '111 57', 'Stockholm', 'Sweden', '2020-06-15', 65000.00),
+	(1, 'Erik Johansson', 'Branch Manager', 'M', 'erik.johansson@stockholmbank.se', '+46 70 123 4567', 'Sveavï¿½gen 14', '111 57', 'Stockholm', 'Sweden', '2020-06-15', 65000.00),
 	(1, 'Fatima Al-Hassan', 'Financial Advisor', 'F', 'fatima.alhassan@stockholmbank.se', '+46 70 234 5678', 'Kungsgatan 34', '111 48', 'Stockholm', 'Sweden', '2021-03-12', 48000.00),
-	(1, 'Liam O’Connor', 'Loan Officer', 'M', 'liam.oconnor@stockholmbank.se', '+46 70 345 6789', 'Birger Jarlsgatan 21', '114 34', 'Stockholm', 'Ireland', '2022-07-01', 45000.00),
+	(1, 'Liam Oï¿½Connor', 'Loan Officer', 'M', 'liam.oconnor@stockholmbank.se', '+46 70 345 6789', 'Birger Jarlsgatan 21', '114 34', 'Stockholm', 'Ireland', '2022-07-01', 45000.00),
 	(1, 'Chen Wei', 'Customer Service Representative', 'M', 'chen.wei@stockholmbank.se', '+46 70 456 7890', 'Hornsgatan 67', '118 49', 'Stockholm', 'China', '2023-05-23', 37000.00),
-	(1, 'Sofia Bergström', 'Accountant', 'F', 'sofia.bergstrom@stockholmbank.se', '+46 70 567 8901', 'Vasagatan 10', '111 20', 'Stockholm', 'Sweden', '2021-11-10', 52000.00),
-	(2, 'Anders Lindqvist', 'Branch Manager', 'M', 'anders.lindqvist@gbgfinans.se', '+46 31 100 200', 'Kungsportsavenyn 45', '411 36', 'Göteborg', 'Sweden', '2019-09-20', 64000.00),
-	(2, 'Aisha Njeri', 'Investment Analyst', 'F', 'aisha.njeri@gbgfinans.se', '+46 31 111 222', 'Södra Vägen 12', '412 54', 'Göteborg', 'Kenya', '2020-12-01', 51000.00),
-	(2, 'Johan Persson', 'Loan Officer', 'M', 'johan.persson@gbgfinans.se', '+46 31 122 333', 'Haga Nygata 9', '411 22', 'Göteborg', 'Sweden', '2023-04-15', 46000.00),
-	(2, 'Maria Gonzalez', 'Financial Advisor', 'F', 'maria.gonzalez@gbgfinans.se', '+46 31 133 444', 'Viktoriagatan 6', '411 25', 'Göteborg', 'Spain', '2021-08-29', 49000.00),
-	(2, 'Raj Patel', 'Customer Service Representative', 'M', 'raj.patel@gbgfinans.se', '+46 31 144 555', 'Östra Hamngatan 22', '411 10', 'Göteborg', 'India', '2022-10-05', 36000.00),
-	(3, 'Karin Svensson', 'Branch Manager', 'F', 'karin.svensson@malmobank.se', '+46 40 200 300', 'Gustav Adolfs torg 8', '211 39', 'Malmö', 'Sweden', '2018-05-14', 63000.00),
-	(3, 'Omar El-Sayed', 'Loan Officer', 'M', 'omar.elsayed@malmobank.se', '+46 40 211 400', 'Davidshallsgatan 17', '211 45', 'Malmö', 'Egypt', '2021-02-10', 47000.00),
-	(3, 'Emily Carter', 'Financial Advisor', 'F', 'emily.carter@malmobank.se', '+46 40 222 500', 'Föreningsgatan 32', '211 52', 'Malmö', 'USA', '2023-07-18', 49000.00),
-	(3, 'Nguyen Hoang', 'Accountant', 'M', 'nguyen.hoang@malmobank.se', '+46 40 233 600', 'Djäknegatan 4', '211 34', 'Malmö', 'Vietnam', '2020-09-22', 53000.00),
-	(3, 'Anna Müller', 'Customer Service Representative', 'F', 'anna.muller@malmobank.se', '+46 40 244 700', 'Skomakaregatan 3', '211 36', 'Malmö', 'Germany', '2022-12-01', 35000.00);
+	(1, 'Sofia Bergstrï¿½m', 'Accountant', 'F', 'sofia.bergstrom@stockholmbank.se', '+46 70 567 8901', 'Vasagatan 10', '111 20', 'Stockholm', 'Sweden', '2021-11-10', 52000.00),
+	(2, 'Anders Lindqvist', 'Branch Manager', 'M', 'anders.lindqvist@gbgfinans.se', '+46 31 100 200', 'Kungsportsavenyn 45', '411 36', 'Gï¿½teborg', 'Sweden', '2019-09-20', 64000.00),
+	(2, 'Aisha Njeri', 'Investment Analyst', 'F', 'aisha.njeri@gbgfinans.se', '+46 31 111 222', 'Sï¿½dra Vï¿½gen 12', '412 54', 'Gï¿½teborg', 'Kenya', '2020-12-01', 51000.00),
+	(2, 'Johan Persson', 'Loan Officer', 'M', 'johan.persson@gbgfinans.se', '+46 31 122 333', 'Haga Nygata 9', '411 22', 'Gï¿½teborg', 'Sweden', '2023-04-15', 46000.00),
+	(2, 'Maria Gonzalez', 'Financial Advisor', 'F', 'maria.gonzalez@gbgfinans.se', '+46 31 133 444', 'Viktoriagatan 6', '411 25', 'Gï¿½teborg', 'Spain', '2021-08-29', 49000.00),
+	(2, 'Raj Patel', 'Customer Service Representative', 'M', 'raj.patel@gbgfinans.se', '+46 31 144 555', 'ï¿½stra Hamngatan 22', '411 10', 'Gï¿½teborg', 'India', '2022-10-05', 36000.00),
+	(3, 'Karin Svensson', 'Branch Manager', 'F', 'karin.svensson@malmobank.se', '+46 40 200 300', 'Gustav Adolfs torg 8', '211 39', 'Malmï¿½', 'Sweden', '2018-05-14', 63000.00),
+	(3, 'Omar El-Sayed', 'Loan Officer', 'M', 'omar.elsayed@malmobank.se', '+46 40 211 400', 'Davidshallsgatan 17', '211 45', 'Malmï¿½', 'Egypt', '2021-02-10', 47000.00),
+	(3, 'Emily Carter', 'Financial Advisor', 'F', 'emily.carter@malmobank.se', '+46 40 222 500', 'Fï¿½reningsgatan 32', '211 52', 'Malmï¿½', 'USA', '2023-07-18', 49000.00),
+	(3, 'Nguyen Hoang', 'Accountant', 'M', 'nguyen.hoang@malmobank.se', '+46 40 233 600', 'Djï¿½knegatan 4', '211 34', 'Malmï¿½', 'Vietnam', '2020-09-22', 53000.00),
+	(3, 'Anna Mï¿½ller', 'Customer Service Representative', 'F', 'anna.muller@malmobank.se', '+46 40 244 700', 'Skomakaregatan 3', '211 36', 'Malmï¿½', 'Germany', '2022-12-01', 35000.00);
 
-UPDATE Bank.Branches SET BranchManagerID ='11' WHERE BranchName = 'Malmö Bank & Co.';
-UPDATE Bank.Branches SET BranchManagerID ='6' WHERE BranchName = 'Göteborg Finanscenter';
+UPDATE Bank.Branches SET BranchManagerID ='11' WHERE BranchName = 'Malmï¿½ Bank & Co.';
+UPDATE Bank.Branches SET BranchManagerID ='6' WHERE BranchName = 'Gï¿½teborg Finanscenter';
 UPDATE Bank.Branches SET BranchManagerID ='1' WHERE BranchName = 'Stockholm City Bank';
 
 INSERT INTO Bank.InterestRates
@@ -353,7 +353,7 @@ VALUES
 	(13, 'DELETE', '2025-04-01 14:44:00', 'Finance.Loans', 29, 'LoanID: 12, Amount: 10000', NULL),
 	(1, 'UPDATE', '2025-04-05 18:12:36', 'Users.Employees', 4, 'Salary: 50000', 'Salary: 55000'),
 	(14, 'INSERT', '2025-04-04 07:19:33', 'Users.Customers', 57, NULL, 'New customer: test'),
-	(9, 'UPDATE', '2025-04-06 09:35:00', 'Users.Customers', 51, 'Old branch: Stockholm', 'New branch: Göteborg'),
+	(9, 'UPDATE', '2025-04-06 09:35:00', 'Users.Customers', 51, 'Old branch: Stockholm', 'New branch: Gï¿½teborg'),
 	(6, 'DELETE', '2025-04-03 13:41:09', 'Finance.Loans', 22, 'LoanID: 12, Amount: 10000', NULL),
 	(7, 'INSERT', '2025-04-02 08:22:49', 'Bank.Transactions', 19, NULL, 'New record created'),
 	(12, 'UPDATE', '2025-04-05 15:10:05', 'Users.Employees', 12, 'Email: old@example.com', 'Email: new@example.com'),
